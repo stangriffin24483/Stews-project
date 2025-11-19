@@ -1,0 +1,50 @@
+# cleanup_temp.ps1
+# Clears temporary files and improves performance
+
+Write-Host "Cleaning temporary files..."
+
+$paths = @(
+    "$env:LOCALAPPDATA\Temp\*",
+    "$env:TEMP\*",
+    "C:\Windows\Temp\*"
+)
+
+foreach ($path in $paths) {
+    try {
+        Remove-Item $path -Recurse -Force -ErrorAction SilentlyContinue
+        Write-Host "Cleared: $path"
+    } catch {
+        Write-Host "Unable to clear: $path"
+    }
+}
+
+Write-Host "Temp cleanup completed!"
+
+@echo off
+echo Running basic network diagnostics...
+
+echo IP Configuration:
+ipconfig
+echo.
+
+echo Pinging Google DNS...
+ping 8.8.8.8
+echo.
+
+echo Checking DNS resolution...
+nslookup google.com
+echo.
+
+echo Diagnostic complete.
+pause
+
+# system_info.ps1
+# Gathers common info for helpdesk tickets
+
+Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion, CsManufacturer, CsModel, CsTotalPhysicalMemory
+
+Write-Host "`nNetwork Info:"
+Get-NetIPConfiguration
+
+Write-Host "`nInstalled Hotfixes:"
+Get-HotFix
