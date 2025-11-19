@@ -1,0 +1,85 @@
+# Troubleshooting: Slow PC Performance
+
+### Symptoms
+- Applications load slowly  
+- System startup takes too long  
+- High disk or CPU usage  
+
+### Steps
+
+1. **Check Task Manager**
+   - Ctrl + Shift + Esc → look for apps using high CPU, RAM, or Disk.
+
+2. **Restart the PC**
+   - Many slowdowns are resolved by clearing memory.
+
+3. **Run Cleanup Script**
+   - Use: `scripts/cleanup_temp.ps1`
+
+4. **Check for Windows Updates**
+   - Settings > Windows Update > Check for updates
+
+5. **Scan for Malware**
+   - Run Windows Defender Quick Scan
+
+6. **Check Disk Space**
+   - Ensure at least 10–15% free space on C:\
+
+7. **Disable Startup Apps**
+   - Task Manager > Startup Apps  
+
+### Resolution Examp
+User’s PC was running slow due to a non-essential app using high CPU. Disabled startup app and removed temp files. Performance improved.
+
+# Troubleshooting: No Internet Connection
+
+### Symptoms
+- Wi-Fi connected but no internet  
+- DNS errors  
+- Pages not loading  
+
+### Steps
+
+1. **Confirm Physical Connection**
+   - Ensure Wi-Fi is enabled  
+   - Check Ethernet cable if wired
+
+2. **Run Network Check Script**
+   - `scripts/network_check.bat`
+
+3. **Flush DNS & Reset Stack**
+
+4. **Restart Network Adapter**
+- Control Panel → Network and Sharing → Change adapter settings
+
+5. **Test DNS**
+- `nslookup google.com`
+
+6. **Reboot Router**
+
+### Resolution Example
+DNS resolution failing. Flushed DNS, renewed IP, and restored adapter functionality.
+
+# Troubleshooting: Printer Not Responding
+
+### Symptoms
+- Jobs stuck in queue  
+- Printer offline  
+- Network printer not found  
+
+### Steps
+
+1. **Restart Print Spooler**
+
+2. **Clear Print Queue Folder**
+
+3. **Re-add Printer**
+- Settings → Bluetooth & Devices → Printers
+
+4. **Check Network Connection (if wireless)**  
+Make sure printer is connected to the correct Wi-Fi network.
+
+5. **Test Print**
+
+### Resolution Example
+Spooler was stuck. Restarted service and cleared queue; printing restored.
