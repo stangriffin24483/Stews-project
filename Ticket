@@ -1,0 +1,27 @@
+# Support Ticket Example 01
+
+**User:** John D.  
+**Issue:** PC running extremely slow  
+
+### Troubleshooting Performed
+- Checked Task Manager — CPU high from background updater  
+- Ran temp cleanup script  
+- Disabled two startup apps  
+- Rebooted machine  
+
+### Resolution
+System performance improved. User confirmed normal operation.
+
+# Support Ticket Example 02
+
+**User:** Anna L.  
+**Issue:** Unable to access shared drive  
+
+### Troubleshooting Performed
+- Verified network connection  
+- Pinned IP via nslookup  
+- Re-mapped drive using correct path  
+- Confirmed user had permissions  
+
+### Resolution
+Drive successfully mapped. User able to access all files.
