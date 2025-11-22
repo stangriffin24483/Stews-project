@@ -1,0 +1,39 @@
+# KB Article: How to Map a Network Drive (Windows)
+
+### Steps
+
+1. Open File Explorer  
+2. Click “This PC”  
+3. Select “Map Network Drive”  
+4. Choose a drive letter  
+5. Enter the path (ex: `\\server\sharedfolder`)  
+6. Check “Reconnect at sign-in”  
+7. Enter credentials if prompted
+
+### Notes
+Use VPN if offsite.
+
+# KB Article: How to Update Drivers
+
+### Steps
+1. Right-click Start → Device Manager  
+2. Expand the device category  
+3. Right-click the device  
+4. Select **Update Driver**  
+5. Choose **Search automatically**  
+
+### Warning
+Avoid third-party driver download websites.
+
+# KB Article: How to Install Approved Software
+
+### Steps
+1. Open Company Portal or IT-approved app store  
+2. Locate the approved software  
+3. Click Install  
+4. Reboot if required  
+5. Verify functionality  
+
+### Notes
+Unauthorized software must not be installed.
+
