@@ -392,11 +392,11 @@ html {
     width: 46vw;
     max-width: 1000px;
     height: auto;
-    opacity: 0.18;
+    opacity: 0.32;
     pointer-events: none;
     transform: translate3d(calc((var(--x,50) - 50) * 0.22%), calc((var(--y,50) - 50) * 0.22%), 0) scale(1);
     transition: transform 0.12s linear, opacity 0.28s ease;
-    filter: drop-shadow(0 24px 60px rgba(0,0,0,0.65));
+    filter: drop-shadow(0 24px 60px rgba(0,0,0,0.75)) brightness(1.15);
     mix-blend-mode: screen;
     z-index: 0;
 }
@@ -440,7 +440,7 @@ body > :not(.bg-screen){
 
 /* Adjust visibility and color in light theme */
 .light-theme .bg-screen{
-    opacity: 0.22;
+    opacity: 0.35;
     mix-blend-mode: multiply;
 }
 
