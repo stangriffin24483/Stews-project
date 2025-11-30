@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Helpdesk Support - Professional IT Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">🖥️ HelpDesk Pro</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#guides" class="nav-link">Guides</a>
+                <a href="#scripts" class="nav-link">Scripts</a>
+                <a href="#tickets" class="nav-link">Support</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>PC Helpdesk Support Solutions</h1>
+            <p>Professional IT troubleshooting, automation, and knowledge base resources</p>
+            <button class="cta-button" onclick="document.getElementById('guides').scrollIntoView({ behavior: 'smooth' })">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides" class="section">
+        <div class="container">
+            <h2>Troubleshooting Guides</h2>
+            <p class="section-subtitle">Step-by-step guides for common IT issues</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>🐢 Slow PC Performance</h3>
+                    <p>Diagnose and resolve CPU, RAM, and disk usage issues. Clean temporary files, manage startup apps, and optimize system resources.</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 Network Connectivity</h3>
+                    <p>Troubleshoot internet connection problems, DNS failures, and Wi-Fi issues. Includes network diagnostics and adapter reset procedures.</p>
+                </div>
+                <div class="card">
+                    <h3>🖨️ Printer Issues</h3>
+                    <p>Fix print queue problems, restart print spooler, and resolve network printer connectivity issues quickly and efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts Section -->
+    <section id="scripts" class="section alternate">
+        <div class="container">
+            <h2>Automation Scripts</h2>
+            <p class="section-subtitle">PowerShell and Batch scripts for IT automation</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>⚙️ Cleanup Script</h3>
+                    <p><code>cleanup_temp.ps1</code> — Automatically clears temporary files from multiple system paths to improve performance.</p>
+                </div>
+                <div class="card">
+                    <h3>🔍 Network Diagnostics</h3>
+                    <p><code>network_check.bat</code> — Runs IP config, DNS lookup, and ping tests. Ideal for quick network troubleshooting.</p>
+                </div>
+                <div class="card">
+                    <h3>ℹ️ System Information</h3>
+                    <p><code>system_info.ps1</code> — Gathers OS version, hardware specs, network config, and hotfixes for support tickets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="section">
+        <div class="container">
+            <h2>Support Tickets & KB</h2>
+            <p class="section-subtitle">Sample support tickets and knowledge base articles</p>
+            <div class="tickets">
+                <div class="ticket">
+                    <h3>Ticket #001 - Slow PC Performance</h3>
+                    <p><strong>User:</strong> John D.</p>
+                    <p><strong>Resolution:</strong> Disabled background updater, ran cleanup script, disabled startup apps. System performance improved.</p>
+                </div>
+                <div class="ticket">
+                    <h3>Ticket #002 - Shared Drive Access</h3>
+                    <p><strong>User:</strong> Anna L.</p>
+                    <p><strong>Resolution:</strong> Re-mapped network drive with correct path, verified user permissions. Drive access restored.</p>
+                </div>
+                <div class="ticket">
+                    <h3>KB Article - Map Network Drive</h3>
+                    <p><strong>Topic:</strong> Windows Network Configuration</p>
+                    <p>Steps to map a network drive, reconnect at sign-in, and troubleshoot connection issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PC Helpdesk Support Mini Project. Professional IT Support Demonstration.</p>
+            <p>
+                <a href="https://github.com/stangriffin24483/Stews-project" target="_blank">View on GitHub</a> |
+                <a href="#home">Back to Top</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
