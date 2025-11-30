@@ -128,7 +128,7 @@
     <script src="js/script.js"></script>
 
     <!-- Decorative computer screen SVG (background) -->
-    <svg class="bg-screen" aria-hidden="true" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet">
+    <svg id="monitorBtn" class="bg-screen" role="button" tabindex="0" aria-label="Open project README" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet">
         <defs>
             <linearGradient id="monitorGrad" x1="0" x2="1">
                 <stop offset="0%" stop-color="#ff3b3b" stop-opacity="0.95" />
@@ -191,5 +191,45 @@
             <rect x="356" y="498" width="48" height="60" rx="8" ry="8" fill="#120000" opacity="0.12" />
         </g>
     </svg>
+
+    <!-- README Modal (hidden by default) -->
+    <div id="readmeModal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="readmeTitle">
+            <header class="modal-header">
+                <h2 id="readmeTitle">Project README</h2>
+                <button id="modalClose" class="modal-close" aria-label="Close README">✕</button>
+            </header>
+            <div class="modal-body">
+                <pre id="readmeContent"># Stews-project
+a lightweight, practical project demonstraiting core PC Helpdesk and technical support skills.
+# PC Helpdesk Support Mini Project
+
+A practical mini-project demonstrating core PC helpdesk and technical support skills.  
+This repository includes troubleshooting guides, scripts, sample tickets, and knowledge base articles designed to simulate real-world IT support work.
+
+---
+
+## Project Contents
+
+- Step-by-step troubleshooting guides  
+- Useful helpdesk scripts (PowerShell and Batch)  
+- Professional knowledge base (KB) documentation  
+- Sample support tickets  
+- A structured layout that reflects real IT workflows  
+
+---
+
+## Skills Demonstrated
+- Windows troubleshooting  
+- Network diagnostics  
+- User communication  
+- Ticketing and documentation  
+- Hardware/software issue resolution  
+- Automation using scripts
+</pre>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

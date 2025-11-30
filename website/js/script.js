@@ -90,6 +90,37 @@ window.addEventListener('load', () => {
     window.addEventListener('touchmove', onTouch, {passive:true});
 })();
 
+// README modal behavior: open when clicking the monitor, close on overlay/close/ESC
+(function(){
+    const monitor = document.getElementById('monitorBtn');
+    const modal = document.getElementById('readmeModal');
+    const overlay = document.getElementById('modalOverlay');
+    const closeBtn = document.getElementById('modalClose');
+    const content = document.getElementById('readmeContent');
+
+    if(!monitor || !modal) return;
+
+    function openModal(){
+        modal.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+        // focus inside modal for accessibility
+        closeBtn && closeBtn.focus();
+    }
+
+    function closeModal(){
+        modal.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+        monitor.focus();
+    }
+
+    monitor.addEventListener('click', openModal);
+    monitor.addEventListener('keydown', (e)=>{ if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(); } });
+    overlay && overlay.addEventListener('click', closeModal);
+    closeBtn && closeBtn.addEventListener('click', closeModal);
+
+    window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
+})();
+
 // Theme toggle: persist preference and apply class
 (function(){
     const themeToggle = document.getElementById('themeToggle');
