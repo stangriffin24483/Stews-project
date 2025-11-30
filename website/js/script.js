@@ -100,9 +100,15 @@ window.addEventListener('load', () => {
         if(theme === 'light'){
             bodyEl.classList.add('light-theme');
             themeToggle.setAttribute('aria-pressed','true');
+            const status = themeToggle.querySelector('.theme-status');
+            if(status) status.textContent = 'On';
+            themeToggle.setAttribute('aria-label','Toggle theme (On)');
         } else {
             bodyEl.classList.remove('light-theme');
             themeToggle.setAttribute('aria-pressed','false');
+            const status = themeToggle.querySelector('.theme-status');
+            if(status) status.textContent = 'Off';
+            themeToggle.setAttribute('aria-label','Toggle theme (Off)');
         }
     }
 

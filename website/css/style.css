@@ -59,6 +59,15 @@ body {
     line-height: 1;
 }
 
+.theme-toggle .theme-status{
+    font-size: 12px;
+    line-height: 1;
+    margin-left: 6px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
 /* Default (dark) shows moon, hides sun */
 .theme-toggle .icon-sun{ display:none; }
 .theme-toggle .icon-moon{ display:inline-block; }
@@ -71,6 +80,10 @@ body {
 }
 .light-theme .theme-toggle .icon-sun{ display:inline-block; }
 .light-theme .theme-toggle .icon-moon{ display:none; }
+
+.light-theme .theme-toggle .theme-status{
+    color: #111;
+}
 
 .container {
     max-width: 1200px;
