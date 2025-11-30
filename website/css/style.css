@@ -22,6 +22,56 @@ body {
     min-height:100vh;
 }
 
+/* Light theme variables */
+.light-theme{
+    --accent:#c0392b;
+    --accent-2:#ff6b6b;
+    --dark:#f7f7f7;
+    --muted:#6b6b6b;
+    color: #111;
+}
+
+/* Theme toggle control */
+.theme-control{
+    margin-left: 12px;
+}
+
+.theme-toggle{
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: inherit;
+    padding: 6px 8px;
+    border-radius: 999px;
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.12s ease, border-color 0.15s ease;
+}
+
+.theme-toggle:focus{
+    outline: 2px solid rgba(255,59,59,0.16);
+    outline-offset: 2px;
+}
+
+.theme-toggle .icon-sun, .theme-toggle .icon-moon{
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Default (dark) shows moon, hides sun */
+.theme-toggle .icon-sun{ display:none; }
+.theme-toggle .icon-moon{ display:inline-block; }
+
+/* Light theme: show sun, hide moon, adjust toggle look */
+.light-theme .theme-toggle{
+    background: rgba(0,0,0,0.04);
+    border-color: rgba(0,0,0,0.06);
+    color: #111;
+}
+.light-theme .theme-toggle .icon-sun{ display:inline-block; }
+.light-theme .theme-toggle .icon-moon{ display:none; }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

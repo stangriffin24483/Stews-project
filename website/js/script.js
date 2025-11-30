@@ -90,6 +90,36 @@ window.addEventListener('load', () => {
     window.addEventListener('touchmove', onTouch, {passive:true});
 })();
 
+// Theme toggle: persist preference and apply class
+(function(){
+    const themeToggle = document.getElementById('themeToggle');
+    const bodyEl = document.body;
+    if(!themeToggle) return;
+
+    function applyTheme(theme){
+        if(theme === 'light'){
+            bodyEl.classList.add('light-theme');
+            themeToggle.setAttribute('aria-pressed','true');
+        } else {
+            bodyEl.classList.remove('light-theme');
+            themeToggle.setAttribute('aria-pressed','false');
+        }
+    }
+
+    // initial theme: saved or prefers-color-scheme
+    const saved = localStorage.getItem('theme');
+    const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+    const initial = saved || (prefersLight ? 'light' : 'dark');
+    applyTheme(initial);
+
+    themeToggle.addEventListener('click', () => {
+        const isLight = bodyEl.classList.contains('light-theme');
+        const next = isLight ? 'dark' : 'light';
+        applyTheme(next);
+        localStorage.setItem('theme', next);
+    });
+})();
+
 // Card tilt effect
 (() => {
     const cards = document.querySelectorAll('.card');
