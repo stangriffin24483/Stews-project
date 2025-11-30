@@ -412,6 +412,22 @@ html {
 .modal-body{ padding:18px; overflow:auto; max-height:68vh; color:#eee; }
 .modal-body pre{ white-space:pre-wrap; word-wrap:break-word; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace; font-size:0.95rem; line-height:1.5; color:#ffdede; background:transparent; border-radius:6px; }
 
+/* modal download button */
+.modal-download{
+    display:inline-block;
+    margin-left:12px;
+    font-size:0.9rem;
+    padding:6px 10px;
+    background:transparent;
+    border:1px solid rgba(255,255,255,0.06);
+    color:var(--accent-2);
+    border-radius:8px;
+    text-decoration:none;
+    transition:background 0.12s ease, transform 0.12s ease;
+}
+
+.modal-download:hover{ background:rgba(255,255,255,0.02); transform:translateY(-2px); }
+
 /* make monitor clickable */
 #monitorBtn{ cursor:pointer; }
 
