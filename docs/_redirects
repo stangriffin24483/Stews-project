@@ -1,0 +1,13 @@
+# Redirect HTTP to HTTPS (enforced by GitHub Pages automatically)
+# Block access to sensitive files
+/.*\.env
+  Status: 404
+
+/.git
+  Status: 404
+
+/.*\.sql
+  Status: 404
+
+/config.json
+  Status: 404
