@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Helpdesk Support - Professional IT Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Stew's HelpDesk</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#guides" class="nav-link">Guides</a>
+                <a href="#scripts" class="nav-link">Scripts</a>
+                <a href="#tickets" class="nav-link">Support</a>
+            </div>
+            <div class="theme-control">
+                <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle light/dark theme">
+                    <span class="icon-sun" aria-hidden="true">☀️</span>
+                    <span class="icon-moon" aria-hidden="true">🌑</span>
+                    <span class="theme-status" aria-hidden="true">Off</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>PC Helpdesk Support Solutions</h1>
+            <p>Professional IT troubleshooting, automation, and knowledge base resources</p>
+            <button class="cta-button" onclick="document.getElementById('guides').scrollIntoView({ behavior: 'smooth' })">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides" class="section">
+        <div class="container">
+            <h2>Troubleshooting Guides</h2>
+            <p class="section-subtitle">Step-by-step guides for common IT issues</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>🐢 Slow PC Performance</h3>
+                    <p>Diagnose and resolve CPU, RAM, and disk usage issues. Clean temporary files, manage startup apps, and optimize system resources.</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 Network Connectivity</h3>
+                    <p>Troubleshoot internet connection problems, DNS failures, and Wi-Fi issues. Includes network diagnostics and adapter reset procedures.</p>
+                </div>
+                <div class="card">
+                    <h3>🖨️ Printer Issues</h3>
+                    <p>Fix print queue problems, restart print spooler, and resolve network printer connectivity issues quickly and efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts Section -->
+    <section id="scripts" class="section alternate">
+        <div class="container">
+            <h2>Automation Scripts</h2>
+            <p class="section-subtitle">PowerShell and Batch scripts for IT automation</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>⚙️ Cleanup Script</h3>
+                    <p><code>cleanup_temp.ps1</code> — Automatically clears temporary files from multiple system paths to improve performance.</p>
+                </div>
+                <div class="card">
+                    <h3>🔍 Network Diagnostics</h3>
+                    <p><code>network_check.bat</code> — Runs IP config, DNS lookup, and ping tests. Ideal for quick network troubleshooting.</p>
+                </div>
+                <div class="card">
+                    <h3>ℹ️ System Information</h3>
+                    <p><code>system_info.ps1</code> — Gathers OS version, hardware specs, network config, and hotfixes for support tickets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="section">
+        <div class="container">
+            <h2>Support Tickets & KB</h2>
+            <p class="section-subtitle">Sample support tickets and knowledge base articles</p>
+            <div class="tickets">
+                <div class="ticket">
+                    <h3>Ticket #001 - Slow PC Performance</h3>
+                    <p><strong>User:</strong> John D.</p>
+                    <p><strong>Resolution:</strong> Disabled background updater, ran cleanup script, disabled startup apps. System performance improved.</p>
+                </div>
+                <div class="ticket">
+                    <h3>Ticket #002 - Shared Drive Access</h3>
+                    <p><strong>User:</strong> Anna L.</p>
+                    <p><strong>Resolution:</strong> Re-mapped network drive with correct path, verified user permissions. Drive access restored.</p>
+                </div>
+                <div class="ticket">
+                    <h3>KB Article - Map Network Drive</h3>
+                    <p><strong>Topic:</strong> Windows Network Configuration</p>
+                    <p>Steps to map a network drive, reconnect at sign-in, and troubleshoot connection issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PC Helpdesk Support Mini Project. Professional IT Support Demonstration.</p>
+            <p>
+                <a href="https://github.com/stangriffin24483/Stews-project" target="_blank">View on GitHub</a> |
+                <a href="#home">Back to Top</a>
+            </p>
+            <p class="made-by">Made by Stanley Griffin</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- Decorative computer screen SVG (background) -->
+    <svg id="monitorBtn" class="bg-screen" role="button" tabindex="0" aria-label="Open project README" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet">
+        <defs>
+            <linearGradient id="monitorGrad" x1="0" x2="1">
+                <stop offset="0%" stop-color="#ff3b3b" stop-opacity="0.95" />
+                <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.85" />
+            </linearGradient>
+            <linearGradient id="screenGrad" x1="0" x2="1">
+                <stop offset="0%" stop-color="#200000" />
+                <stop offset="100%" stop-color="#000000" />
+            </linearGradient>
+            <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="20" result="b" />
+                <feMerge>
+                    <feMergeNode in="b" />
+                    <feMergeNode in="SourceGraphic" />
+                </feMerge>
+            </filter>
+        </defs>
+
+        <!-- monitor group -->
+        <g class="monitor" transform="translate(60,40)">
+            <!-- outer bezel -->
+            <rect x="0" y="0" width="760" height="460" rx="22" ry="22" fill="url(#monitorGrad)" opacity="0.12" stroke="#2a0000" stroke-opacity="0.25" />
+
+            <!-- screen area -->
+            <rect class="screen" x="28" y="30" width="704" height="392" rx="12" ry="12" fill="url(#screenGrad)" stroke="#2b0000" stroke-opacity="0.18" />
+
+            <!-- screen content: subtle grid and icons -->
+            <g class="screen-content" transform="translate(36,38)">
+                <rect width="688" height="376" rx="10" ry="10" fill="transparent" />
+                <!-- small header icons -->
+                <circle cx="18" cy="18" r="7" fill="#ffcccb" opacity="0.9" />
+                <rect x="38" y="13" width="80" height="10" rx="4" fill="#ffb3b3" opacity="0.85" />
+
+                <!-- simulated window cards -->
+                <g class="windows">
+                    <rect x="26" y="46" width="260" height="170" rx="8" ry="8" fill="#110000" opacity="0.6" />
+                    <rect x="306" y="56" width="336" height="126" rx="8" ry="8" fill="#0f0000" opacity="0.5" />
+                    <!-- small list lines on left window -->
+                    <g fill="#ff9d9d" opacity="0.65">
+                        <rect x="40" y="66" width="190" height="8" rx="4" />
+                        <rect x="40" y="86" width="150" height="8" rx="4" />
+                        <rect x="40" y="106" width="120" height="8" rx="4" />
+                    </g>
+                </g>
+
+                <!-- faint grid lines -->
+                <g stroke="#ff3b3b" stroke-opacity="0.03" stroke-width="1">
+                    <!-- vertical lines -->
+                    <path d="M120 0 L120 376 M240 0 L240 376 M360 0 L360 376 M480 0 L480 376 M600 0 L600 376" />
+                    <!-- horizontal lines -->
+                    <path d="M0 60 L688 60 M0 140 L688 140 M0 220 L688 220 M0 300 L688 300" />
+                </g>
+
+                <!-- subtle animated glow rectangle on screen -->
+                <rect class="screen-glow" x="26" y="46" width="616" height="200" rx="8" ry="8" fill="url(#monitorGrad)" opacity="0.04" filter="url(#softGlow)" />
+            </g>
+
+            <!-- stand and base -->
+            <rect x="320" y="478" width="120" height="20" rx="8" ry="8" fill="#120000" opacity="0.12" />
+            <rect x="356" y="498" width="48" height="60" rx="8" ry="8" fill="#120000" opacity="0.12" />
+        </g>
+    </svg>
+
+    <!-- README Modal (hidden by default) -->
+    <div id="readmeModal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="readmeTitle">
+            <header class="modal-header">
+                <h2 id="readmeTitle">Project README</h2>
+                <a id="downloadReadme" class="modal-download" href="https://raw.githubusercontent.com/stangriffin24483/Stews-project/main/README.md" target="_blank" rel="noopener noreferrer" download>Download README</a>
+                <button id="modalClose" class="modal-close" aria-label="Close README">✕</button>
+            </header>
+            <div class="modal-body">
+                <pre id="readmeContent"># Stews-project
+a lightweight, practical project demonstraiting core PC Helpdesk and technical support skills.
+# PC Helpdesk Support Mini Project
+
+A practical mini-project demonstrating core PC helpdesk and technical support skills.  
+This repository includes troubleshooting guides, scripts, sample tickets, and knowledge base articles designed to simulate real-world IT support work.
+
+---
+
+## Project Contents
+
+- Step-by-step troubleshooting guides  
+- Useful helpdesk scripts (PowerShell and Batch)  
+- Professional knowledge base (KB) documentation  
+- Sample support tickets  
+- A structured layout that reflects real IT workflows  
+
+---
+
+## Skills Demonstrated
+- Windows troubleshooting  
+- Network diagnostics  
+- User communication  
+- Ticketing and documentation  
+- Hardware/software issue resolution  
+- Automation using scripts
+</pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
